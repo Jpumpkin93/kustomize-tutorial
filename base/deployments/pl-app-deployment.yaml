@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pl-app
+  labels:
+    app: pl-app
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: pl-app
+  template:
+    metadata:
+      labels:
+        app: pl-app
+    spec:
+      containers:
+        - name: pl-app
+          image: jpumpkin93/pl-app
+          ports:
+            - containerPort: 8080
