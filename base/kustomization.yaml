@@ -6,4 +6,4 @@ kind: Kustomization
 images:
 - name: jpumpkin93/pl-app
   newName: jpumpkin93/pl-app
-  newTag: "4"
+  newTag: "5"
